@@ -1,0 +1,72 @@
+#calendar {
+    width: 380px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.week {
+    display: flex;
+}
+
+.weekname {
+    width: 50px;
+    background-color: skyblue;
+    color: white;
+}
+
+.sunday {
+  color: red;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.daynum {
+    width: 50px;
+    line-height: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-bottom : solid 1px gray;
+}
+
+.daynum .empty {
+    pointer-events: none;
+}
+
+.today{
+  background-color: yellow;
+}
+
+#goto{
+  position: absolute;
+  left: 280px;
+  bottom: 350px;
+}
+
+.daynum:hover {
+    background: gray;
+    color: white;
+}
+
+.prev-btn{
+  position: absolute;
+  top:20;
+  left:30px;
+}
+
+.next-btn{
+  position: absolute;
+  top:20;
+  left:330px;
+}
+
+.me {
+  padding-top:10;
+  font-style:italic;
+  font-size:12pt;
+  border-top: solid 1px #0000ff;
+  border-bottom : solid 3px #0000ff;
+}
